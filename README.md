@@ -1,4 +1,4 @@
-# LysNet - Fiber optic internet distribution company
+# Render 3D - Arquitectura Mariano Carusso
 
 ![Layout preview for the LysNet page](./img/presentaci%C3%B3n.png)
 
