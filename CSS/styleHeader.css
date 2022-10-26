@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,400&display=swap');
+
+:root {
+    --colorHeaderContainer: linear-gradient(to right, white, rgb(224, 240, 250));
+    --colorHeaderLetras: black;
+    --colorHeaderBarraMenu: linear-gradient(to bottom, rgb(2, 56, 119) 10%, rgb(30, 144, 252) 90%);
+    --colorHeaderOpcionesBarraMenu: rgb(0, 116, 199);
+    --colorHeaderCapa: rgb(58, 68, 96);
+    --color_logo_barra: linear-gradient(to right, green, greenyellow, green);
+
+    --colorMainConteiner: linear-gradient(to bottom, rgb(2, 56, 119) 10%, rgb(30, 144, 252) 90%);
+    --colorMainLetras: white;
+
+    --colorTextoDescripcionProyecto: rgb(102, 102, 102);
+
+    --colorFooterConteiner: linear-gradient(to bottom, rgb(2, 56, 119) 10%, rgb(30, 144, 252) 90%);
+    --colorFooterLetras: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer'
+    ;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--colorHeaderContainer);
+}
+
+.containerMenu {
+    padding: 5px 10px;
+    width: 100%;
+    height: auto;
+    background: var(--colorHeaderBarraMenu);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+}
+
+/*---- Menu Principal ----*/
+.menu {
+    margin-left: 50px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu > li {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 130px;
+    height: 70px;
+    position: relative; /* Despues los sub-menu se posicionan en relación a su padre. */
+}
+.menu > li > a {
+    border-radius: 5px;
+    padding: 0 6px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 300ms ease, background 300ms ease, box-shadow 300ms ease, -webkit-text-stroke 300ms ease, color 300ms ease, font-weight 300ms ease, padding  300ms ease, font-size  300ms ease, font-weight 300ms ease;
+}
+
+.menu > li > a:hover {
+    transform: scale(1.05);
+    background: var(--colorHeaderOpcionesBarraMenu);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
+    color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 3px;
+}
+
+/*---- Logo Home ----*/
+.menu > .li__home > a {
+    padding: 0px;
+}
+.menu > .li__home > a > img {
+    /* border: 1px solid white; */
+    padding: 0px;
+    width: 50px;
+}
+.selected {
+    border-radius: 5px;
+    transform: scale(1.1);
+    margin-right: 5px;
+    background:var(--colorHeaderOpcionesBarraMenu);
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, .5);
+}
+
+/*------- Sub-Menu --------*/
+.sub__menu {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    padding: 10px 0px;
+    background: white;
+    z-index: 10;
+    position: absolute; /* Lo posicionamos en relación del padre (Servicios) */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 90px;
+    left: -5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 300ms ease, opacity 300ms ease, top 300ms ease;
+}
+.menu > .conteiner_sub-menu:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    top: 62px;
+}
+.sub__menu > li > a {
+    /* border: 1px solid black; */
+    margin: 0px ;
+    padding: 3px 6px;
+    width: 180px;
+    height: auto;
+    color: #0099E9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: transform 300ms ease 0ms, background 300ms ease 0ms, -webkit-text-stroke 300ms ease 0ms,
+                font-weight 300ms ease 0ms, letter-spacing 300ms ease 0ms, padding-left 300ms ease 0ms
+                , box-shadow 300ms ease 0ms;
+}
+.sub__menu > li > a:hover {
+    transform: scale(1.1);
+    background: var(--colorHeaderOpcionesBarraMenu);
+    -webkit-text-stroke: 1px white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-left: 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+/*---- Sub-Menu applicator seudo class ----*/
+.sub__menu:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+    border-radius: 0px 0px 100% 0px;
+    box-shadow: -2px -2px 4px 0 rgba(0, 0, 0, .5);
+    position: absolute;
+    top: -10px;
+    left: 40px;
+}
+
+/*--------- element's responsive ---------*/
+/*---- Icon Barra ----*/
+.containerMenu input {
+    display: none;
+}
+.label__barra {
+    border: none;
+}
+.barra_menu {
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.close-menu, .open-menu {
+    border: transparent;
+    display: none;
+    background: transparent;
+}
+
+.open-menu img {
+    width: 24px;
+}
+
+@media screen and (max-width: 795px) {
+    /* -------------- HEADER: Bar de navigation -------------- */
+
+    .containerMenu {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* ----- Menu ----- */
+    .menu {
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+        left: -50px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--colorHeaderCapa);
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 300ms ease;
+    }
+
+    .menu li {
+        max-width: 100%;
+        line-height: 60px;
+    }
+
+    .menu > li > a {
+        letter-spacing: 2px;
+    }
+
+    .open-menu,
+    .close-menu {
+        padding: 55px 30px;
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    .close-menu {
+        align-self: flex-end;
+    }
+
+    /*------- Sub-Menu --------*/
+    .sub__menu {
+        width: 40%;
+        max-width: 150px;
+        left: 60%;
+    }
+
+    .sub__menu > li > a {
+        width: 100%;
+    }
+
+    /* ----- Class to control since JavaScript ----- */
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* Pseudo selector's (after y before) */
+    .menu li a::after {
+    content: none;
+    }
+}

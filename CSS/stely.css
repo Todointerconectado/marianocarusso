@@ -1,0 +1,134 @@
+/* ------------------------------ Responsive Movil ------------------------------ */
+
+@media screen and (max-width: 430px) {
+    /*---------- Heder Superior -----------*/
+    .headerSuperior {
+        padding: 0px;
+        gap: 0;
+    }
+    /* Contemner del logo */
+    .logo {
+        transform: scale(.9);
+        width: auto;
+    }
+    .logo > span {
+        text-shadow: 2px 2px 3px rgb(117, 117, 117);
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+    .logo > span > .fusi {
+        /* border: 1px solid; */
+        font-size: 12px;
+    }
+    .logo > span > .boton_off {
+        padding: 0 0px 0px 0;
+        width: 16px;
+    }
+    .logo > span > span:last-child {
+        /* border: 1px solid; */
+        font-size: 12px;
+        padding-left: 6px;
+    }
+    .logo > .logo_frase {
+        /* border: 1px solid; */
+        width: 100%;
+        font-size: 10px;
+        letter-spacing: 6px;
+    }
+
+    /* buscador */
+    .search input {
+        border: .5px solid rgb(112, 112, 112);
+        width: 140px;
+        padding: 5px;
+    }
+    .search input::placeholder {
+        font-size: 11px;
+    }
+
+    /*--------- Heder Barra Menu ---------*/
+    .container__menu {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    }
+
+    /*---- Menu Principal ----*/
+    .menu {
+        padding: 0px;
+        flex-direction: column;
+        height: 0;
+        gap: 10px;
+        visibility: hidden;
+        transition: height 300ms ease, visibility 300ms ease;
+    }
+    .menu > li {
+        border-radius: 0px;
+        padding: 0;
+    }
+    .menu > li > a {
+        border-radius: 0px;
+        padding: 20px 0;
+    }
+    .menu > li > a:hover {
+        padding: 20px 0;
+        transform: scale(1);
+        font-size: 22px;
+    }   
+
+    /*---- Logo Home ----*/
+    .menu > .li__home > a {
+        padding: 0px;
+    }
+    .menu > .li__home > a > img {
+        padding: 0px;
+        width: 15%;
+        height: 0px;
+        transition: height 300ms ease;
+    }
+    #selected {
+        border-radius: 0px;
+        transform: scale(1);
+        margin-right: 0px;
+        box-shadow: none;
+    }
+
+    /*------- Sub-Menu --------*/
+    .sub__menu {
+        top: 100px;
+        left: 130px;
+    }
+    .conteiner_sub-menu:hover > ul {
+        top: -80px;
+    }
+    .sub__menu > li > a {
+    margin: 0px ;
+    width: 220px;
+    height: auto;
+    font-size: 18px;
+    }
+
+
+    /*---- Icon Barra ----*/
+    .conteiner__barra {
+        display: flex;
+    }
+
+    .label__barra {
+        border: 4px solid transparent;
+        display: flex;
+        justify-content: end;
+    }
+    .barra_menu {
+        transform: scale(.5);
+        display: flex;
+    }
+
+    #ckeck__menu:checked ~ .menu {
+        height: 500px;
+        visibility: visible;
+    }
+    #ckeck__menu:checked ~ .menu > .li__home > a > img {
+        height: 90px;
+    }
+}

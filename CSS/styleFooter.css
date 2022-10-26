@@ -1,0 +1,27 @@
+/*-------------------------- footer --------------------------*/
+footer {
+    padding: 30px;
+    grid-area: footer;
+    width: 100%;
+    height: auto;
+    background: var(--colorFooterConteiner);
+    color: var(--colorFooterLetras);
+    letter-spacing: .5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+address {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}

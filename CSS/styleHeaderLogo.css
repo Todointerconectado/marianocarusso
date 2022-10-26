@@ -1,0 +1,116 @@
+/* ---- Contemner del logo ---- */
+.aLogo,
+.logo {
+    border-radius: 5px;
+    width: 450px;
+    min-width: 260px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.logo > span {
+    text-shadow: 2px 2px 3px rgb(117, 117, 117);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: rgb(24, 24, 24);
+}
+
+.logo > span > .logo_MC {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;
+}
+.logo > span > .logo_MC > g > .letra_M {
+    fill: rgb(24, 24, 24);
+    transition: fill 1200ms ease;
+}
+.logo > span > .logo_MC > g > .letra_C {
+    fill: rgb(189, 189, 189);
+    transition: fill 1200ms ease;
+}
+
+.off_on {
+    color: rgb(189, 189, 189);
+    fill: rgb(189, 189, 189);
+    text-shadow: 2px 2px 3px rgb(24, 24, 24);
+    transition: color 1200ms ease, text-shadow 1200ms ease;
+}
+.logo > span > .boton_off {
+    /* border: 1px solid blue; */
+    box-sizing: content-box;
+    padding: 0;
+    width: 18px;
+    height: 100%;
+    font-weight: bold;
+    transition: transform 1200ms ease, fill 1200ms ease;
+}
+.logo > span > .fusi {
+    /* border: 1px solid blue; */
+    transition: color 1200ms ease, text-shadow 1200ms ease;
+}
+.logo > span > span:last-child {
+    /* border: 1px solid blue; */
+    padding-left: 3px;
+}
+.logo > .logo_frase {
+    /* border: 1px solid; */
+    padding-top: 3px;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    text-shadow: none;
+}
+
+/* cambia color */
+.logo > span > .boton_off:hover {
+    /* border: 1px solid; */
+    fill: rgb(189, 189, 189);
+    transform: rotate(360deg);
+}
+
+.logo > span > .boton_off:hover ~ .logo_MC > g > .letra_M {
+    fill: rgb(189, 189, 189);
+}
+.logo > span > .boton_off:hover ~ .logo_MC > g > .letra_C {
+    fill: rgb(24, 24, 24);
+}
+
+.logo > span > .boton_off:hover ~ span:first-of-type {
+    color: rgb(189, 189, 189);
+    text-shadow: 2px 2px 3px rgb(24, 24, 24);
+}
+.logo > span > .boton_off:hover ~ .off_on {
+    color: rgb(24, 24, 24);
+    text-shadow: 2px 2px 3px rgb(189, 189, 189);
+}
+
+/* cambia position */
+.logo > span > .boton_off {
+    order: 2;
+}
+.logo > span > span:last-child {
+    order: 3;
+}
+
+/* buscador */
+.search input {
+    border-radius: 5px;
+    width: 180px;
+    padding: 10px;
+}
