@@ -1,7 +1,75 @@
 .main {
-    margin-top: 149px;
-    border: 4px solid blue;
-    grid-area: main;
     width: 100%;
-    height: 1000px;
+    height: auto;
+}
+
+/* Portada */
+.frontPage {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient( var(--colorPortadaTransparent), var(--colorPortadaTransparent)), url(../img/portadas/sofaMobite.jpg );
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: left top;
+}
+
+.frontPageText {
+    padding: 10px;
+    text-shadow: 1px 0px 10px rgb(0, 0, 0, .8);
+    /* font-family: 'Comfortaa',cursive; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--colorPortadaText);
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .frontPage {
+        height: 500px;
+        background: linear-gradient( var(--colorPortadaTransparent), var(--colorPortadaTransparent)), url(../img/portadas//CocinaDesktop.png );
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Article of the portada */
+.articleText {
+    /* border: 1px solid; */
+    padding: 30px 10px 60px 10px;
+    width: 100%;
+    height: auto;
+    font-family: 'Segoe UI', Arial,  system-ui;
+    color: var(--colorTextoDescripcionProyecto);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.articleTextTitle {
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--colorPortadaText);
+    letter-spacing: 1.5px;
+    font-family: Arial;
+}
+
+.frontPage2 {
+    background: linear-gradient( var(--colorPortadaTransparent), var(--colorPortadaTransparent)), url(../img/portadas/Baño.png );
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.frontPageText2 {
+    font-size: 64px;
 }

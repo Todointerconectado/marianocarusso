@@ -1,20 +1,21 @@
 /*-------------------------- footer --------------------------*/
 footer {
-    padding: 30px;
-    grid-area: footer;
+    padding: 30px 10px;
     width: 100%;
     height: auto;
     background: var(--colorFooterConteiner);
     color: var(--colorFooterLetras);
     letter-spacing: .5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-grow: 1;
 }
 
-address {
+.footerInfo {
+    margin-top: 30px;
     width: 100%;
     height: auto;
     font-size: 14px;
@@ -22,6 +23,13 @@ address {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    gap: 10px;
+}
+
+.footerInfo ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
