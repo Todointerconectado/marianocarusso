@@ -10,6 +10,7 @@
 
     --colorMainConteiner: linear-gradient(to bottom, rgb(2, 56, 119) 10%, rgb(30, 144, 252) 90%);
     --colorMainLetras: white;
+    --colorText: rgb(75, 115, 167);
     --colorPortadaTransparent: rgba(255, 255, 255, 0.5);
     --colorPortadaText: rgba(0, 0, 0);
 
@@ -38,6 +39,9 @@
 header {
     width: 100%;
     height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: var(--colorHeaderContainer);
 }
 
@@ -82,6 +86,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     transition: transform 300ms ease, background 300ms ease, box-shadow 300ms ease, -webkit-text-stroke 300ms ease, color 300ms ease, font-weight 300ms ease, padding  300ms ease, font-size  300ms ease, font-weight 300ms ease;
 }
 
@@ -193,7 +198,8 @@ header {
     display: none;
 }
 
-.close-menu, .open-menu {
+.close-menu,
+.open-menu {
     border: transparent;
     display: none;
     background: transparent;

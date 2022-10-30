@@ -7,18 +7,24 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Render3D • Mariano Carusso</title>
 
-    <link rel="icon" href="./img/icon/icon_acceso/iconApps.svg">
+    <!--  page logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/icon_acceso/iconApps.png">
     <link rel="icon" href="./img/icon/icon_acceso/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/icon_acceso/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/icon/icon_acceso/iconApps.svg">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/icon/icon_acceso/favicon-16x16.png">
     <link rel="manifest" href="/img/icon/icon_acceso/site.webmanifest">
 
+    <!-- Style CSS -->
     <link rel="stylesheet" href="./CSS/styleHeader.css">
     <link rel="stylesheet" href="./CSS/styleHeaderLogo.css">
     <link rel="stylesheet" href="./CSS/styleMain.css">
     <link rel="stylesheet" href="./CSS/redesSociales.css">
     <link rel="stylesheet" href="./CSS/styleFooter.css">
+
+    <!-- JavaScript -->
+    <script defer src="https://kit.fontawesome.com/4600a4ff4e.js" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
 </head>
 
 <body class="body" id="profile">
@@ -67,10 +73,10 @@
 
             <ul class="menu">
                 <button class="close-menu" aria-label="Cerrar menú">
-                    <img src="img/icon/x.svg" alt="Icono cerrar barra">
+                    <img id="profile" src="img/icon/x.svg" alt="Icono cerrar barra">
                 </button>
                 <li class="li__home">
-                    <a class="selected" href="#inicio">
+                    <a class="selected" href="#profile">
                         <img src="./img/icon/home.svg" alt="home"/>
                     </a>
                 </li>
@@ -92,14 +98,14 @@
     </header>
 
     <main class="main">
-        <div class="frontPage">
+        <div class="frontPage" id="Quienes_somos">
             <p class="frontPageText">
                 PLASMAMOS EN CADA RENDER LOS DESEOS DE NUESTROS CLIENTES. <br><br>
                 CON REALISMO Y VELOCIDAD, CREAMOS HOY LO QUE SERÁ EL FUTURO.
             </p>
         </div>
 
-        <article id="Quienes_somos" class="articleText">
+        <article class="articleText">
             <h2 class="articleTextTitle">QUIENES SOMOS</h2>
             <p>
                 Velocidad y Realismo. Así trabajamos hace tres años en Sentir Visual y vamos por mas.
@@ -118,9 +124,154 @@
             </p>
         </article>
 
-        <div class="frontPage frontPage2">
+        <div class="frontPage frontPage2" id="servicios">
             <p class="frontPageText frontPageText2">SERVICIOS</p>
         </div>
+
+        <div class="containerSuperior">
+            <div class="containerInterExter">
+                <figure class="figure">
+                    <img src="./img/iconos/home.png" alt="home">
+                </figure>
+                <article class="figureText">
+                    <h2 class="articleTextSubTitle">Interiorismo</h2>
+                    <p>
+                        ¿Querés certezas de cómo quedará tu ambiente con esos cambios que querés hacer? Acondicionamos y reinventamos tus espacios, creando proyectos funcionales, únicos y atractivos.
+                    </p>
+                </article>
+            </div>
+
+            <div class="containerInterExter">
+                <figure class="figure">
+                    <img src="./img/iconos/Hotel.png" alt="home">
+                </figure>
+                <article class="figureText">
+                    <h2 class="articleTextSubTitle">Exterior</h2>
+                    <p>
+                        ¿Dudas sobre la fachada o el jardín de tu casa? Pasanos los planos y nosotros nos ocupamos de hacer el render.
+                    </p>
+                </article>
+            </div>
+
+            <div class="containerInterExter">
+                <figure class="figure">
+                    <img src="./img/iconos/play.png" alt="home">
+                </figure>
+                <article class="figureText">
+                    <h2 class="articleTextSubTitle">Videos Recorrido</h2>
+                    <p>
+                        ¿Necesitás un video para ver varios espacios a la vez? Nosotros nos ocupamos de crear recorridos estéticos y funcionales.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+        <!-- <div id="containerAcordeon">
+            <div class="containerDespriegue">
+                <button class="despriegueTitle">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    ¿Qué es renderizado 3D?
+                </button>
+            
+                <p class="despriegueText">
+                    El renderizado 3D es esencialmente la creación de imágenes digitales, basadas en modelos o escenarios enteros tridimensionales o “3D”, creando así imágenes foto realistas. Esto se logra usando una gran cantidad de datos y elementos, como texturas, iluminación, materiales, profundidad, entre otros.
+                    <br><br>
+                    El “render” 3D como también es conocido, se genera a partir del cálculo de todos esos datos. Este cálculo es realizado por complejos algoritmos, los cuales generan las escenas deseadas, tomando en cuenta todos los datos, poniendo en escena cada elemento, como si se tratase de un rompecabezas.
+                    <br><br>
+                    Por ejemplo, al realizar un render, la computadora debe realizar el cálculo de cómo se verá la luz encima de determinados materiales, desde distintos ángulos y tomando en cuenta color, textura y otros elementos con los cuales deberá interactuar para producir la imagen final.
+                    <br><br>
+                    El renderizado 3D es ampliamente utilizado en múltiples áreas del mundo audiovisual, desde creación de videojuegos, películas animadas, tours virtuales para venta de viviendas, capacitación de personal en tareas complejas, hasta las más detalladas ilustraciones del cuerpo humano para el campo de la medicina.
+                    <br><br>
+                    Desde hace décadas, con la continua mejora de los sistemas informáticos, el renderizado 3D ha ido tomando no solo más fuerza e impacto en la publicidad, sino también más realismo, se ha tornado más dinámico y eficaz, haciéndonos ver cosas como nunca antes.
+                    <br><br>
+                    Como se puede ver, el renderizado 3D ayuda a visualizar muchas cosas cómo sería posible de otra manera, bien dice el dicho “Una imagen vale más que mil palabras” y un render… ¡Vale más que mil imágenes!
+                </p>
+            </div>
+        </div> -->
+
+        <ul class="container" id="container">
+            <li class="list">
+                <div class="listTitle">
+                    <h2>
+                        <i class="fa-brands fa-unity"></i>
+                        ¿Qué es renderizado 3D?
+                    </h2>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p class="scale">
+                    El renderizado 3D es esencialmente la creación de imágenes digitales, basadas en modelos o escenarios enteros tridimensionales o “3D”, creando así imágenes foto realistas. Esto se logra usando una gran cantidad de datos y elementos, como texturas, iluminación, materiales, profundidad, entre otros.
+                    <br><br>
+                    El “render” 3D como también es conocido, se genera a partir del cálculo de todos esos datos. Este cálculo es realizado por complejos algoritmos, los cuales generan las escenas deseadas, tomando en cuenta todos los datos, poniendo en escena cada elemento, como si se tratase de un rompecabezas.
+                    <br><br>
+                    Por ejemplo, al realizar un render, la computadora debe realizar el cálculo de cómo se verá la luz encima de determinados materiales, desde distintos ángulos y tomando en cuenta color, textura y otros elementos con los cuales deberá interactuar para producir la imagen final.
+                    <br><br>
+                    El renderizado 3D es ampliamente utilizado en múltiples áreas del mundo audiovisual, desde creación de videojuegos, películas animadas, tours virtuales para venta de viviendas, capacitación de personal en tareas complejas, hasta las más detalladas ilustraciones del cuerpo humano para el campo de la medicina.
+                    <br><br>
+                    Desde hace décadas, con la continua mejora de los sistemas informáticos, el renderizado 3D ha ido tomando no solo más fuerza e impacto en la publicidad, sino también más realismo, se ha tornado más dinámico y eficaz, haciéndonos ver cosas como nunca antes.
+                    <br><br>
+                    Como se puede ver, el renderizado 3D ayuda a visualizar muchas cosas cómo sería posible de otra manera, bien dice el dicho “Una imagen vale más que mil palabras” y un render… ¡Vale más que mil imágenes!
+                </p>
+            </li>
+
+            <li class="list">
+                <div class="listTitle">
+                    <h2>
+                        <i class="fa-solid fa-city"></i>
+                        ¿Qué tipos de renderizado existen?
+                    </h2>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>
+                    Existen 2 tipos de renderizado 3D: Real-Time (O en Tiempo Real) y Offline.
+                    <br><br>
+                    El renderizado Real Time es usado para dar realismo a gráficos en tiempo real como por ejemplo videojuegos, en los que se necesita contar con la representación visual de elementos como texturas e iluminación, interactuando en tiempo real con el entorno y el jugador.
+                    <br><br>
+                    Renderizado Offline: Es el más común y ampliamente utilizado, no es primordial la velocidad así como en el online o “real time”, es más frecuente en casos de animación para caricaturas, videos demostrativos o imágenes foto realistas.
+                </p>
+            </li>
+
+            <li class="list">
+                <div class="listTitle">
+                    <h2>
+                        <i class="fa-regular fa-handshake"></i>
+                        ¿Cualquiera puede hacer un render 3D?
+                    </h2>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>
+                    Lleva mucho tiempo de capacitación y experiencia hacer modelos convincentes y de calidad, ya que conlleva experimentar, conocer técnicas avanzadas de iluminación, interacción con el ambiente, ángulo de cámaras y más. En Sentir Visual, contamos con esa experiencia por años de trabajar en proyectos para todos nuestros clientes.
+                </p>
+            </li>
+
+            <li class="list">
+                <div class="listTitle">
+                    <h2>
+                        <i class="fa-solid fa-earth-americas"></i>
+                        ¿Cómo me ayudaría el renderizado en mi empresa o producto?
+                    </h2>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>
+                    Hay múltiples usos para el renderizado 3D, desde mostrar una versión lo más fiel posible de una casa, un producto o un lugar que aún no ha sido construido, hasta posibles cambios a un producto, sin incurrir en gastos importantes de manufactura.
+                </p>
+            </li>
+        </ul>
+    
+        <!-- <div class="acordeon">
+            <div class="acordeonContenedor">
+                <h2 id="boton" class="acordeonTitle">Title1</h2>
+                <p id="acordeonText" class="acordeonText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore voluptas animi? Rem tempore error quas nihil ut at, tenetur, illum possimus culpa hic ea? Non error hic culpa minima?
+                </p>
+            </div>
+
+            <div class="acordeonContenedor">
+                <h2 id="boton" class="acordeonTitle">Title2</h2>
+                <p  id="acordeonText" class="acordeonText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore voluptas animi? Rem tempore error quas nihil ut at, tenetur, illum possimus culpa hic ea? Non error hic culpa minima?
+                </p>
+            </div>
+        </div> -->
     </main>
 
     <footer class="footer" id="redes">
@@ -176,7 +327,5 @@
             </ul>
         </address>
     </footer>
-
-    <script defer src="js/app.js"></script>
 </body>
 </html>
