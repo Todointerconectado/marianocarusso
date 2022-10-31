@@ -41,8 +41,10 @@
 
 /* Article of the portada */
 .articleText {
+    margin: 0 auto;
     padding: 30px 10px 60px 10px;
     width: 100%;
+    max-width: 1000px;
     height: auto;
     font-family: 'Segoe UI', Arial,  system-ui;
     color: var(--colorTextoDescripcionProyecto);
@@ -75,7 +77,7 @@
     font-size: 64px;
 }
 
-/* Interior y Exterior */
+/* ---- Interior y Exterior ---- */
 
 .containerSuperior {
     margin: 0 auto;
@@ -113,9 +115,9 @@
     color: var(--colorText);
     padding-bottom: 20px;
     letter-spacing: 1.5px;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
-    font: 32px/1.1 "Raleway",sans-serif;
+    font-family: "Raleway",sans-serif;
 }
 
 .figureText p {
@@ -124,187 +126,89 @@
     font-family: 'Segoe UI', Arial,  system-ui;
     font-weight: 500;
     color: var(--colorTextoDescripcionProyecto);
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
-/*  */
-
-.containerDetails {
-    padding-bottom: 50px;
-    margin: 0 auto;
+/* ---- Acordeon ---- */
+.acordeonContainerGeneral {
+    padding: 0 10px;
     width: 100%;
-    max-width: 600px;
-}
-.detailsTitle {
-    padding: 10px;
-    border: 1px solid rgba(128, 128, 128, .3);
-    border-bottom: 0px;
-    width: 100%;
-    max-width: 600px;
-    font-weight: 600;
-    font: 18px/1.1 "Raleway",sans-serif;
-}
-.detailsDfn {
-    border: 1px solid rgba(128, 128, 128, .3);
-    padding: 10px;
-    font: 15px/1.1 "Raleway",sans-serif;
-    line-height: 23px;
-}
-
-/* despriegue */
-/* .containerDespriegue {
-    margin: 0 auto;
-    width: 600px;
-}
-.despriegueTitle {
-    padding: 10px;
-    border: 1px solid rgba(128, 128, 128, .3);
-    border-bottom: 0px;
-    width: 100%;
-    font-weight: 600;
-    font: 18px/1.1 "Raleway",sans-serif;
-    color: var(--colorText);
-}
-.despriegueTitleIcon {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/iconos/+.png);
-    background-size: cover;
-}
-.despriegueText {
-    border: 1px solid rgba(128, 128, 128, .3);
-    padding: 10px;
-    width: 100%;
-    font: 15px/1.1 "Raleway",sans-serif;
-    line-height: 0px;
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    transition: all 300ms ease-in-out;
-}
-.despriegueTitle:hover ~ .despriegueText {
-    line-height: 23px;
-    opacity: 1;
-    position: sticky;
-}
-.fa-chevron-down {
-    transition: transform 400ms ease;
-}
-.despriegueTitle:hover > .fa-chevron-down {
-    transform: rotate(180deg);
-} */
-
-
-/*  */
-.container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 630px;
-    padding: 0;
-    margin-top: 0;
-}
-.list {
-    width: 100%;
-    list-style: none;
-    height: 48px;
-    overflow: hidden;
-    border-bottom: 1px solid white;
-    transition: all 700ms ease;
-}
-.listTitle {
-    border: 1px solid rgba(128, 128, 128, .3);
-    box-shadow: 0 -1px 0 0 rgb(154, 154, 154) inset;
     display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    cursor: pointer;
-    height: 48px;
-    padding: 10px;
-    width: 100%;
-    font-weight: 600;
-    font: 18px/1.1 "Raleway",sans-serif;
-    color: var(--colorText);
-}
-.listTitle h2 {
-    font-family: sans-serif;
-    font-size: 14px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.listTitle h2 i,
-.listTitle i {
-    width: 40px;
-    margin: 0 5px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    transition: transform 300ms ease;
-}
-.list p {
-    border: 1px solid rgba(128, 128, 128, .3);
-    padding: 10px;
-    overflow: hidden;
+.listContainer {
     width: 100%;
+    max-width: 800px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.btnItem {
+    border: 1px solid rgb(102, 102, 102, .3);
+    padding: 8px;
+    background: var(--colorLinealAcordeon);
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Raleway",sans-serif;
+    letter-spacing: 1px;
+    color: var(--colorText);
+    cursor: pointer;
+    transition: background 600ms ease;
+}
+.btnItem::before {
+    content: '\002B';
+    padding-right: 10px;
+    transition: content 300ms ease;
+}
+.itemContent {
     font-size: 14px;
     font-family: 'Segoe UI', Arial,  system-ui;
     font-weight: 500;
     color: var(--colorTextoDescripcionProyecto);
+    overflow: hidden;
+    /* Modificar con otra class */
+    padding: 0 8px;
+    max-height: 0;
+    opacity: 0;
+    transition: 
+        padding 300ms ease,
+        max-height 400ms ease,
+        opacity 300ms ease
+    ;
 }
 
 /* class para agregar con JS */
-.scale {
-    height: auto;
+.active + .itemContent {
+    border-top: 0;
+    border-bottom: 0;
+    border: 1px solid rgba(128, 128, 128, .3);
+    padding: 20px 8px;
+    max-height: 1000px;
+    opacity: 1;
 }
-.rotate {
-    transform: rotate(180deg);
+.btnItem.active {
+    background: rgb(102, 102, 102, .3);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*  */
-/* .acordeon {
-    width: 70%;
-    margin: auto;
-}
-.acordeonContenedor {
-    background: #222;
-    font-family: sans-serif;
-}
-.acordeonTitle {
-    border-bottom: 1px solid rgb(255, 255, 255, .05);
-    box-shadow: 0 -1px 0 0 #000 inset;
-    text-shadow: 1px 1px #000 ;
-    color: rgba(#fff, .5);
-    background: #111;
-    line-height: 2.5;
-    padding: 0 1em;
-    font-size: 1.2em;
-    margin: 0;
-    color: var(--colorText);
-    letter-spacing: 1.5px;
-    cursor: pointer;
-}
-.acordeonText {
-    padding: 0 10px;
-    background: rgb(255, 255, 255, .5);
-    line-height: 0;
-    overflow: hidden;
-    transition: all 500ms ease;
+.btnItem.active::before {
+    content: '\02212';
 }
 
-class agregar con JS
-.clickOpen {
-    padding: 10px;
-    line-height: 20px;
-} */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    /* ---- Interior y Exterior ---- */
+    .articleTextSubTitle {
+        padding-bottom: 5px;
+        font-size: 23px;
+    }
+    .figureText p {
+        font-size: 16px;
+    }
+
+    /* ---- Acordeon ---- */
+    .btnItem {
+        font-size: 15px;
+        letter-spacing: .5px;
+    }
+}

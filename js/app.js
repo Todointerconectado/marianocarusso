@@ -1,4 +1,4 @@
-// ---- Section menu
+// ---- Section menu ----
 const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
@@ -38,72 +38,43 @@ menuLinks.forEach(menuLink => {
     }
 });
 
-// ---- connect the form to whatsapp
+// ---- connect the form to whatsapp ----
 // let sendbtn = document.querySelector('#sendbtn');
 
 // sendbtn.addEventListener('click',enviarMensaje);
-
 // function enviarMensaje() {
 //     let inputName = document.querySelector('#name').value
 //     let textareaMensaje = document.querySelector('#description').value
-
 //     let urlWhatsapp = "https://api.whatsapp.com/send?phone=541154120432&text=Nombre y Apellido: %0A" + inputName + "%0A%0AMensaje: %0A" + textareaMensaje + "%0A";
-
 //     window.open(urlWhatsapp);
 // }
 
 
-// ---- Las seccion con despriegue
-const container = document.getElementById('container');
+// ---- Las seccion con despriegue ----
+const btnItem = document.querySelectorAll('.item .btnItem');
 
-container.addEventListener('click',(e)=>{
-    if(e.target.classList.contains('listTitle')) { // devuelve booleano
-        e.target.parentElement.classList.toggle('scale')
-        e.target.children[1].classList.toggle('rotate')
+function removeclass(){
+    for(let i=0; i < btnItem.length; i++){
+        btnItem[i].classList.remove('active');
     }
-})
+}
 
+for(let i=0; i < btnItem.length; i++){
+    // console.log(btnItem[i]);  imprimo los elementos que recore el bucle.
+    
+    btnItem[i].addEventListener('click', function(e){
+        // console.log(e.target);  //imprime el elemento que hago click.
+        let btnItemClicleado = e.target;
+        // btnItemClicleado.classList.add('active'); // Agrego la class active al btnItemClicleado.
+    
+        if(btnItemClicleado.className == 'btnItem active'){  // Pregunta si la class active existe:
+            // btnItemClicleado.classList.remove('active'); // Si existe la remueve.
+            removeclass();
+        }
+        else{
+            removeclass();
+            btnItemClicleado.classList.add('active'); // Y si no existe la coloca.
+        }
+    })
+}
 
-
-
-
-
-
-
-// function acordeon (){
-//     document.getElementById('acordeonText').classList.toggle ('clickOpen');
-// }
-
-// document.getElementById('boton').onclick = function (){
-//     acordeon();
-// }
-
-
-
-
-// const boton = document.getElementById('boton');
-// const acordeonText = document.querySelectorAll('acordeonText');
-// console.log(acordeonText);
-
-// boton.addEventListener('click',()=>{
-
-//     for(let contador of acordeonText) {
-//         contador.classList.toggle('clickOpen')
-//     }
-
-// });
-
-
-// function acordeon (){
-//     const acordeonText = document.querySelectorAll('acordeonText');
-
-//     boton.addEventListener('click',()=>{
-//         for(let contador=0; contador < acordeonText.length; contador++) {
-//             acordeonText[contador].classList.toggle('clickOpen');
-//         }
-//     });
-// }
-
-// document.getElementById('boton').onclick = function (){
-//     acordeon();
-// }
