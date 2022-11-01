@@ -37,9 +37,9 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-header {
+.header {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, .6);
-    backdrop-filter: blur(1.3px);
+    /* backdrop-filter: blur(1.3px); */
     width: 100%;
     height: auto;
     position: fixed;
@@ -272,6 +272,8 @@ header {
     }
 
     /* ----- Class to control since JavaScript ----- */
+
+
     .menu_opened {
         opacity: 1;
         pointer-events: all;
