@@ -39,7 +39,19 @@
 
 .header {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, .6);
-    /* backdrop-filter: blur(1.3px); */
+    backdrop-filter: blur(1.3px);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--colorHeaderContainer);
+}
+
+/* agregar con JS */
+.header.header2 {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .6);
+    backdrop-filter: none;
     width: 100%;
     height: auto;
     position: fixed;

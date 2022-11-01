@@ -33,6 +33,7 @@ menuLinks.forEach(menuLink => {
 
     const hash = menuLink.getAttribute("href");
     const target = document.querySelector(hash);
+
     if(target) {
         observer.observe(target);
     }
@@ -78,3 +79,15 @@ for(let i=0; i < btnItem.length; i++){
     })
 }
 
+// ---- Activar y desactivar el efecto cristal en el header ----
+    // we store the class header in a constant header
+const header = document.querySelector(".header"); 
+
+// function to Apply the header2 class
+function header2() {
+    header.classList.toggle("header2");
+}
+
+// we apply the class when clicking on the buttons
+openMenuBtn.addEventListener("click", header2);
+closeMenuBtn.addEventListener("click", header2);
