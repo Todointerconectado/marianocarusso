@@ -9,7 +9,10 @@
 .frontPage {
     width: 100%;
     height: 300px;
-    background: linear-gradient( var(--colorPortadaTransparent), var(--colorPortadaTransparent)), url(../img/portadas/sofaMobite.jpg );
+    background: linear-gradient(
+                    var(--colorPortadaTransparent),
+                    var(--colorPortadaTransparent)),
+                    url("../img/renders/Obra_01/05.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -33,7 +36,10 @@
 @media screen and (min-width: 600px) {
     .frontPage {
         height: 500px;
-        background: linear-gradient( var(--colorPortadaTransparent), var(--colorPortadaTransparent)), url(../img/portadas//CocinaDesktop.png );
+        background: linear-gradient(
+                        var(--colorPortadaTransparent),
+                        var(--colorPortadaTransparent)),
+                        url("../img/renders/Obra_01/05.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -64,7 +70,10 @@
 }
 
 .frontPage2 {
-    background: linear-gradient( var(--colorPortadaTransparent), var(--colorPortadaTransparent)), url(../img/portadas/Baño.png );
+    background: linear-gradient( 
+                    var(--colorPortadaTransparent),
+                    var(--colorPortadaTransparent)),
+                    url("../img/renders/Obra_02/02.jpg");
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -75,6 +84,21 @@
 
 .frontPageText2 {
     font-size: 64px;
+}
+
+.frontPage3 {
+    margin: 20px 0;
+    background: linear-gradient( 
+                    var(--colorPortadaTransparent),
+                    var(--colorPortadaTransparent)),
+                    url("../img/renders/Obra_01/05.jpg")
+                ;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* ---- Interior y Exterior ---- */
@@ -211,4 +235,45 @@
         font-size: 15px;
         letter-spacing: .5px;
     }
+}
+
+/* ---- Galeria ---- */
+.containerGaleria {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.galeriaTitle {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--colorText);
+    letter-spacing: 1.5px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Raleway",sans-serif;
+}
+
+.galeriaImg {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+}
+.galeriaImg img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 1000ms ease;
+    object-fit: cover;
+    transition: transform 300ms ease;
+}
+
+.galeriaImg img:hover {
+    transform: scale(1.06);
 }
