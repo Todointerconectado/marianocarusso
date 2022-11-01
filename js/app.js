@@ -28,7 +28,8 @@ const observer = new IntersectionObserver((entries) => {
 
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", function() {
-        menu.classList.remove("menu_opened");
+        menu.classList.remove("menu_opened");  // Quite the class al play una option del menu (height del menu)
+        header.classList.remove("header2");    // Quite the class al play una option del menu (efecto cristal)
     });
 
     const hash = menuLink.getAttribute("href");
@@ -38,6 +39,8 @@ menuLinks.forEach(menuLink => {
         observer.observe(target);
     }
 });
+
+
 
 // ---- connect the form to whatsapp ----
 // let sendbtn = document.querySelector('#sendbtn');
@@ -49,6 +52,7 @@ menuLinks.forEach(menuLink => {
 //     let urlWhatsapp = "https://api.whatsapp.com/send?phone=541154120432&text=Nombre y Apellido: %0A" + inputName + "%0A%0AMensaje: %0A" + textareaMensaje + "%0A";
 //     window.open(urlWhatsapp);
 // }
+
 
 
 // ---- Las seccion con despriegue ----
@@ -78,6 +82,8 @@ for(let i=0; i < btnItem.length; i++){
         }
     })
 }
+
+
 
 // ---- Activar y desactivar el efecto cristal en el header ----
     // we store the class header in a constant header
