@@ -24,7 +24,7 @@ const observer = new IntersectionObserver((entries) => {
             menuLink.classList.add("selected");
         }
     });
-}, {rootMargin: "-40% 0px 0% 0px"});
+}, {rootMargin: "-40% 0px -30% 0px"});
 
 menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", function() {
