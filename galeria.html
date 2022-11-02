@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="encoding" content="ISO-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Render3D • Mariano Carusso</title>
 
     <!-- Bookstores -->
@@ -23,6 +22,7 @@
     <link rel="stylesheet" href="./CSS/styleHeader.css">
     <link rel="stylesheet" href="./CSS/styleHeaderLogo.css">
     <link rel="stylesheet" href="./CSS/styleMain.css">
+    <link rel="stylesheet" href="./CSS/styleMainGaleria.css">
     <link rel="stylesheet" href="./CSS/redesSociales.css">
     <link rel="stylesheet" href="./CSS/styleFooter.css">
 
@@ -91,10 +91,10 @@
                 </li>
                 <li><a href="#Quienes_somos">Quienes somos </a> </li>
                 <li class="conteiner_sub-menu"><a href="#servicios">Servicios</a></li>
-                <li class="conteiner_sub-menu"><a href="./galeria.html">Proyectos</a>
+                <li class="conteiner_sub-menu"><a href="#proyectos">Proyectos</a>
                     <ul class="sub__menu">
-                        <li><a href="#proyectos1">Proyectos 1 </a> </li>
-                        <li><a href="#proyectos2">Proyectos 2 </a> </li>
+                        <li><a href="#proyecto1">Proyectos 1 </a> </li>
+                        <li><a href="#proyecto2">Proyectos 2 </a> </li>
                     </ul>
                 </li>
                 <li><a href="#redes">Redes</a> </li>
@@ -129,88 +129,161 @@
             </p>
         </article>
 
-        <div class="containerSuperior">
-            <div class="containerInterExter">
-                <figure class="figure">
-                    <img src="./img/iconos/home.png" alt="home">
-                </figure>
-                <article class="figureText">
-                    <h2 class="articleTextSubTitle">Interiorismo</h2>
-                    <p>
-                        ¿Querés certezas de cómo quedará tu ambiente con esos cambios que querés hacer? Acondicionamos y
-                        reinventamos tus espacios, creando proyectos funcionales, únicos y atractivos.
-                    </p>
-                </article>
-            </div>
-
-            <div class="containerInterExter">
-                <figure class="figure">
-                    <img src="./img/iconos/Hotel.png" alt="home">
-                </figure>
-                <article class="figureText">
-                    <h2 class="articleTextSubTitle">Exterior</h2>
-                    <p>
-                        ¿Dudas sobre la fachada o el jardín de tu casa? Pasanos los planos y nosotros nos ocupamos de
-                        hacer el render.
-                    </p>
-                </article>
-            </div>
-
-            <div class="containerInterExter">
-                <figure class="figure">
-                    <img src="./img/iconos/play.png" alt="home">
-                </figure>
-                <article class="figureText">
-                    <h2 class="articleTextSubTitle">Videos Recorrido</h2>
-                    <p>
-                        ¿Necesitás un video para ver varios espacios a la vez? Nosotros nos ocupamos de crear recorridos
-                        estéticos y funcionales.
-                    </p>
-                </article>
-            </div>
-        </div>
-
         <div id="servicios" class="acordeonContainerGeneral">
-            <section class="listContainer">
+            <section class="listContainer listContainer2">
                 <article class="item">
-                    <h2 class="btnItem">¿Qué es renderizado 3D?</h2>
-                    <p class="itemContent">
-                        El renderizado 3D es esencialmente la creación de imágenes digitales, basadas en modelos o escenarios enteros tridimensionales o “3D”, creando así imágenes foto realistas. Esto se logra usando una gran cantidad de datos y elementos, como texturas, iluminación, materiales, profundidad, entre otros.
-                        <br><br>
-                        El “render” 3D como también es conocido, se genera a partir del cálculo de todos esos datos. Este cálculo es realizado por complejos algoritmos, los cuales generan las escenas deseadas, tomando en cuenta todos los datos, poniendo en escena cada elemento, como si se tratase de un rompecabezas.
-                        <br><br>
-                        Por ejemplo, al realizar un render, la computadora debe realizar el cálculo de cómo se verá la luz encima de determinados materiales, desde distintos ángulos y tomando en cuenta color, textura y otros elementos con los cuales deberá interactuar para producir la imagen final.
-                        <br><br>
-                        El renderizado 3D es ampliamente utilizado en múltiples áreas del mundo audiovisual, desde creación de videojuegos, películas animadas, tours virtuales para venta de viviendas, capacitación de personal en tareas complejas, hasta las más detalladas ilustraciones del cuerpo humano para el campo de la medicina.
-                        <br><br>
-                        Desde hace décadas, con la continua mejora de los sistemas informáticos, el renderizado 3D ha ido tomando no solo más fuerza e impacto en la publicidad, sino también más realismo, se ha tornado más dinámico y eficaz, haciéndonos ver cosas como nunca antes.
-                        <br><br>
-                        Como se puede ver, el renderizado 3D ayuda a visualizar muchas cosas cómo sería posible de otra manera, bien dice el dicho “Una imagen vale más que mil palabras” y un render… ¡Vale más que mil imágenes!
-                    </p>
+                    <h2 class="btnItem">Interior</h2>
+
+                    <div class="itemContent containerGaleria">
+                        <article class="item">
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 1</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_01/01.jpg" alt="renders 01">
+                                        <img src="./img/renders/Obra_01/03.jpg" alt="renders 03">
+                                        <img src="./img/renders/Obra_01/04.jpg" alt="renders 04">
+                                        <img src="./img/renders/Obra_01/05.jpg" alt="renders 05">
+                                        <img src="./img/renders/Obra_01/06.jpg" alt="renders 06">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 3</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_03/03.jpg" alt="Obra 3 renders 03">
+                                        <img src="./img/renders/Obra_03/04.jpg" alt="Obra 3 renders 04">
+                                        <img src="./img/renders/Obra_03/05.jpg" alt="Obra 3 renders 05">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 7</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_07/01.jpg" alt="Obra 7 renders 01">
+                                        <img src="./img/renders/Obra_07/02.jpg" alt="Obra 7 renders 02">
+                                        <img src="./img/renders/Obra_07/03.jpg" alt="Obra 7 renders 03">
+                                        <img src="./img/renders/Obra_07/04.jpg" alt="Obra 7 renders 04">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 8</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_08/02.jpg" alt="Obra 8 renders 02">
+                                        <img src="./img/renders/Obra_08/03.jpg" alt="Obra 8 renders 03">
+                                        <img src="./img/renders/Obra_08/04.jpg" alt="Obra 8 renders 04">
+                                        <img src="./img/renders/Obra_08/06.jpg" alt="Obra 8 renders 06">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 9</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_09/01.jpg" alt="Obra 9 renders 01">
+                                        <img src="./img/renders/Obra_09/02.jpg" alt="Obra 9 renders 02">
+                                        <img src="./img/renders/Obra_09/03.jpg" alt="Obra 9 renders 03">
+                                    </figure>
+                                </div>
+                            </details>
+                        </article>
+                    </div>
+
                 </article>
 
                 <article class="item">
-                    <h2 class="btnItem">¿Qué tipos de renderizado existen?</h2>
-                    <p class="itemContent">
-                        Existen 2 tipos de renderizado 3D: Real-Time (O en Tiempo Real) y Offline.
-                        <br><br>
-                        El renderizado Real Time es usado para dar realismo a gráficos en tiempo real como por ejemplo videojuegos, en los que se necesita contar con la representación visual de elementos como texturas e iluminación, interactuando en tiempo real con el entorno y el jugador.
-                        <br><br>
-                        Renderizado Offline: Es el más común y ampliamente utilizado, no es primordial la velocidad así como en el online o “real time”, es más frecuente en casos de animación para caricaturas, videos demostrativos o imágenes foto realistas.
-                    </p>
+                    <h2 class="btnItem">Exterior</h2>
+                    
+                    <div class="itemContent containerGaleria">
+                        <article class="item">
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 1</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_01/02.jpg" alt="Obra 1 renders 02">
+                                        <img src="./img/renders/Obra_01/08.jpg" alt="Obra 1 renders 08">
+                                        <img src="./img/renders/Obra_01/09.jpg" alt="Obra 1 renders 09">
+                                        <img src="./img/renders/Obra_01/10.jpg" alt="Obra 1 renders 10">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 2</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_02/01.jpg" alt="Obra 2 renders 01">
+                                        <img src="./img/renders/Obra_02/02.jpg" alt="Obra 2 renders 02">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 3</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_03/01.png" alt="Obra 3 renders 01">
+                                        <img src="./img/renders/Obra_03/02.png" alt="Obra 3 renders 02">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 4</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_04/01.jpg" alt="Obra 4 renders 01">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 5</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_05/01.jpg" alt="Obra 5 renders 01">
+                                        <img src="./img/renders/Obra_05/02.jpg" alt="Obra 5 renders 02">
+                                        <img src="./img/renders/Obra_05/03.jpg" alt="Obra 5 renders 03">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 8</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_08/01.jpg" alt="Obra 8 renders 01">
+                                        <img src="./img/renders/Obra_08/05.jpg" alt="Obra 8 renders 05">
+                                    </figure>
+                                </div>
+                            </details>
+
+                            <details class="galeriaDetails">
+                                <summary class="galeriaSummary" id="proyecto1">Title Obra 10</summary>
+                                <div class="galeriaContenido">
+                                    <figure class="galeriaImg">
+                                        <img src="./img/renders/Obra_10/01.jpg" alt="Obra 10 renders 01">
+                                        <img src="./img/renders/Obra_10/02.jpg" alt="Obra 10 renders 02">
+                                    </figure>
+                                </div>
+                            </details>
+                        </article>
+                    </div>
+
                 </article>
 
                 <article class="item">
-                    <h2 class="btnItem">¿Cualquiera puede hacer un render 3D?</h2>
+                    <h2 class="btnItem">Recorridos Virtuales</h2>
                     <p class="itemContent">
                         Lleva mucho tiempo de capacitación y experiencia hacer modelos convincentes y de calidad, ya que conlleva experimentar, conocer técnicas avanzadas de iluminación, interacción con el ambiente, ángulo de cámaras y más. En Sentir Visual, contamos con esa experiencia por años de trabajar en proyectos para todos nuestros clientes.
-                    </p>
-                </article>
-
-                <article class="item">
-                    <h2 class="btnItem">¿Cómo me ayudaría el renderizado en mi empresa o producto?</h2>
-                    <p class="itemContent">
-                        Hay múltiples usos para el renderizado 3D, desde mostrar una versión lo más fiel posible de una casa, un producto o un lugar que aún no ha sido construido, hasta posibles cambios a un producto, sin incurrir en gastos importantes de manufactura.
                     </p>
                 </article>
             </section>
@@ -276,5 +349,4 @@
         </address>
     </footer>
 </body>
-
 </html>
