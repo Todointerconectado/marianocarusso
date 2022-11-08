@@ -87,7 +87,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    position: relative; /* Despues los sub-menu se posicionan en relación a su padre. */
 }
 .menu > li {
     border-radius: 5px;
@@ -141,6 +140,9 @@
 }
 
 /*------- Sub-Menu --------*/
+.conteiner_sub-menu {
+    position: relative; /* Despues los sub-menu se posicionan en relación a su padre. */
+}
 .sub__menu {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     padding: 10px 0px;
@@ -151,7 +153,7 @@
     flex-direction: column;
     gap: 5px;
     top: 90px;
-    left: -5px;
+    left: 0px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 300ms ease, opacity 300ms ease, top 300ms ease;
