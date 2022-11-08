@@ -135,11 +135,19 @@
     max-width: 1000px;
     font-family: sans-serif;
     font-size: 14px;
+    background-image: linear-gradient(
+                                        rgba(87, 87, 87, .3),
+                                        rgba(87, 87, 87, .3) ),
+                                        url("/img/renders/Obra_03/02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .btnItem {
     border: 1px solid rgb(102, 102, 102, .3);
     padding: 8px;
     background: var(--colorLinealAcordeon);
+    backdrop-filter: blur(1.3px);
     display: block;
     width: 100%;
     font-weight: 600;
@@ -147,8 +155,13 @@
     font-family: "Raleway",sans-serif;
     letter-spacing: 1px;
     color: var(--colorText);
+    text-shadow: 0 0 3px var(--colorMainLetras);
     cursor: pointer;
-    transition: background 600ms ease;
+    transition: background 600ms ease,
+                backdrop-filter 300ms ease;
+}
+.btnItem:hover {
+    backdrop-filter: blur(0px);
 }
 .btnItem::before {
     content: '\002B';
@@ -159,6 +172,7 @@
     font-size: 14px;
     font-family: 'Segoe UI', Arial,  system-ui;
     font-weight: 500;
+    background: var(--colorMainLetras);
     color: var(--colorTextoDescripcionProyecto);
     overflow: hidden;
     /* Modificar con otra class */

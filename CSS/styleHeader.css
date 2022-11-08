@@ -14,13 +14,13 @@
     --colorMainLetras: white;
 
     /* --colorText: rgb(75, 115, 167); */
-    --colorText: rgb(63, 67, 83);
+    --colorText: rgb(34, 29, 29);
 
     --colorPortadaTransparent: rgba(255, 255, 255, 0.5);
     --colorPortadaText: rgba(0, 0, 0);
 
     --colorTextoDescripcionProyecto: rgb(102, 102, 102);
-    --colorLinealAcordeon: linear-gradient(to right, white, rgb(102, 102, 102, .3));
+    --colorLinealAcordeon: linear-gradient(to right, rgb(255, 255, 255), rgb(102, 102, 102, .3));
 
     --colorFooterConteiner: linear-gradient(to bottom, rgb(0, 0, 0, .9) 10%, rgb(82, 82, 82) 90%);
     --colorFooterLetras: rgb(255, 255, 255);
