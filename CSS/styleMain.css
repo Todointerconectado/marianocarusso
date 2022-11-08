@@ -138,7 +138,7 @@
     background-image: linear-gradient(
                                         rgba(87, 87, 87, .3),
                                         rgba(87, 87, 87, .3) ),
-                                        url("/img/renders/Obra_03/02.png");
+                                        url("../img/renders/Obra_03/02.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

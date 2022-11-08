@@ -52,19 +52,16 @@
     background-image: linear-gradient(
                                         rgba(87, 87, 87, .3),
                                         rgba(87, 87, 87, .3) ),
-                                        url("/img/renders/Obra_01/03.jpg");
+                                        url("../img/renders/Obra_01/03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 .itemArticleExterior {
     background-image: linear-gradient(
-                                        rgba(87, 87, 87, .3),
-                                        rgba(87, 87, 87, .3) ),
-                                        url("/img/renders/OBRA_10/01.jpg");
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; */
+                        rgba(87, 87, 87, .3),
+                        rgba(87, 87, 87, .3) ),
+                        url("../img/renders/OBRA_10/01.jpg");
 }
 .galeriaSummary {
     border: 1px solid rgba(255, 255, 255);
