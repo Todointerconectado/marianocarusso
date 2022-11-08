@@ -97,3 +97,5 @@ function header2() {
 // we apply the class when clicking on the buttons
 openMenuBtn.addEventListener("click", header2);
 closeMenuBtn.addEventListener("click", header2);
+
+console.log(4+5);

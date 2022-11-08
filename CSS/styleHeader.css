@@ -87,13 +87,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative; /* Despues los sub-menu se posicionan en relación a su padre. */
 }
 .menu > li {
     border-radius: 5px;
     width: 100%;
     max-width: 130px;
     height: 70px;
-    position: relative; /* Despues los sub-menu se posicionan en relación a su padre. */
+    
 }
 .menu > li > a {
     border-radius: 5px;
