@@ -60,8 +60,9 @@
     background-position: center center;
 }
 .galeriaSummary {
-    border: 1px solid rgba(255, 255, 255);
-    backdrop-filter: blur(1.1px);
+    border: 1px solid rgb(102, 102, 102, .3);
+    background: var(--colorLinealAcordeon);
+    backdrop-filter: blur(1.3px);
     margin: 0 auto;
     padding: 5px 0;
     width: 100%;
