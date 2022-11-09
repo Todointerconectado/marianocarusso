@@ -82,7 +82,7 @@
 
 .galeriaContenido {
     border: 1px solid rgb(102, 102, 102, .3);
-    padding: 10px;
+    padding: 10px 0;
     background-color: white;
     overflow: hidden;
 }
