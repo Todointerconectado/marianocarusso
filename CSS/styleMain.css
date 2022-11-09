@@ -150,18 +150,19 @@
     backdrop-filter: blur(1.3px);
     display: block;
     width: 100%;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: bold;
     font-family: "Raleway",sans-serif;
     letter-spacing: 1px;
     color: var(--colorText);
     text-shadow: 0 0 3px var(--colorMainLetras);
     cursor: pointer;
     transition: background 600ms ease,
-                backdrop-filter 300ms ease;
+                backdrop-filter 300ms ease,
+                text-transform 300ms ease;
 }
 .btnItem:hover {
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(.5px);
+    text-transform: uppercase;
 }
 .btnItem::before {
     content: '\002B';
@@ -197,9 +198,40 @@
 }
 .btnItem.active {
     background: rgb(102, 102, 102, .3);
+    backdrop-filter: blur(.5px);
+    text-transform: uppercase;
+    font-size: 16px;
 }
 .btnItem.active::before {
     content: '\02212';
+}
+
+.btnProyectos {
+    margin: 50px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 10px #b5b5b5,
+                -5px -5px 10px #ffffff;
+    list-style: none;
+    color: var(--colorText);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.btnProyectos:hover {
+    opacity: .8;
+    color: white;
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+    text-shadow: 0 0 10px black;
+}
+.btnProyectos:active {
+    transform: scale(.9);
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
