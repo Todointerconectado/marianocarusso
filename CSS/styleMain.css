@@ -173,7 +173,7 @@
     transition: content 300ms ease;
 }
 .itemContent {
-    font-size: 14px;
+    margin: 0 auto;
     font-family: 'Segoe UI', Arial,  system-ui;
     font-weight: 500;
     background: var(--colorMainLetras);
@@ -188,6 +188,14 @@
         max-height 400ms ease,
         opacity 300ms ease
     ;
+}
+
+.itemContentText {
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    font-size: 16px;
 }
 
 /* class para agregar con JS */
