@@ -48,7 +48,7 @@
 /* Article of the portada */
 .articleText {
     margin: 0 auto;
-    padding: 30px 10px 60px 10px;
+    padding: 30px 0px 0px 0px;
     width: 100%;
     max-width: 1000px;
     height: auto;
@@ -60,8 +60,11 @@
 }
 
 .articleTextTitle {
+    margin: 0 auto;
     margin-bottom: 15px;
+    padding: 0 10px;
     width: 100%;
+    max-width: 1000px;
     font-size: 32px;
     font-weight: 400;
     color: var(--colorPortadaText);
