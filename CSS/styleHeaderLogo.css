@@ -100,7 +100,7 @@
     text-shadow: 2px 2px 3px rgb(189, 189, 189);
 }
 
-/* cambia position */
+/* ------------------ cambia position ------------------ */
 .logo > span > .boton_off {
     order: 2;
 }
